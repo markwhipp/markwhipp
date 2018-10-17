@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* test layout */
+
+
+.image-grid-contact {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+	padding-bottom: 1.2em;
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.image-grid-contact > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grid-contact > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
