@@ -356,14 +356,26 @@ section article a:hover {
 
 /* No Grid Fallback -------------------------------*/
 
-.cards {
-  display: -ms-grid;
+
+/* Fallback for IE 10 it works but only if grid option switched off */
+.cards{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.subject{
+  flex: 1 1 320px;	
+} 
+
+ .cards {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   max-width: 1180px;
   margin: 0 auto 30px;
-}
+} 
 
 
 
@@ -390,6 +402,16 @@ footer{
 	background-color: gray;
 }
 
+.footer-info{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ft-col{
+  flex: 1 1 150px;	
+} 
 
 
 .footer-info{
