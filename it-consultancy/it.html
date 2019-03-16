@@ -16,9 +16,9 @@
   </head>
   
   <body>
-  <div class="wrapper">
-    <header><a href="../index.html">
-      <img class="logo" src="../img/reg_mark.png" alt="registration Mark" /></a>
+  <div class="l-full-wrapper">
+    <header class="page-header"><a href="../index.html">
+      <img class="l-logo" src="../img/reg_mark.png" alt="registration Mark" /></a>
       <h1 class="heading">MWDC</h1>
       </header> 
       
@@ -47,25 +47,25 @@
       
       <section class="cards">
       
-        <article class="subject">
+        <article class="card-subject">
         <a href="cabling.html">
           <img class="article-img" src="../img/cat6sm.jpg" alt="Cat 6 Cabling Block " />
           <h1 class="article-title">
             Cabling Specification and Termination
           </h1>
-			<p class="article-intro">I specify computer network cabling requirements based on the needs of all IT vendors. I ensure the topology is sufficient for the current needs of the business and has scope to grow for future developments. I also often handle terminating, testing and labelling of patch bars and 'device end' structured Ethernet cabling. Read More..</p>
+			<p class="article-intro">I specify computer network cabling requirements based on the needs of all IT vendors. I ensure the topology is sufficient for the current needs of the business and has scope to grow for future developments. I also often handle terminating, testing and labelling of patch bars and 'device end' structured Ethernet cabling...</p>
         </a></article>
         
-        <article class="subject">
-        <a href="#">
+        <article class="card-subject">
+        <a href="cabinet-preparation.html">
           <img class="article-img" src="img/cabinet.jpg" alt="Patch Cabinet " />
           <h1 class="article-title">
             Cabinet Preparation
           </h1>
-          <p class="article-intro">I specify networking cabinets and arrange installations of Internet circuits, managed switches, customer Wi-Fi gateways, routers etc. Maintaining the equipment in efficiently prepared cabinets saves space and protects networks from accidental failures.</p>
+          <p class="article-intro">I specify networking cabinets and arrange installations of Internet circuits, managed switches, customer Wi-Fi gateways, routers etc. Maintaining the equipment in efficiently prepared cabinets saves space and protects networks from accidental failures...</p>
         </a></article>
         
-        <article class="subject">
+        <article class="card-subject">
         <a href="#">
           <img class="article-img" src="../img/router-320.jpg" alt="Routers " />
           <h1 class="article-title">
@@ -73,7 +73,7 @@
           </h1>
 		<p class="article-intro">I design and install computer networks for existing sites and new store openings. This involves liaising with multiple IT, CCTV, telephony and audio vendors. I ensure that they have the network resources they need to run their systems effectively as and when they need them. I also often assist in patching their devices out, and at times, undertake full installations of EPOS, stock management and telephony systems. </p>	</a></article>
 		  
-		  <article class="subject">
+		  <article class="card-subject">
         <a href="#">
           <img class="article-img" src="img/ap2.jpg" alt="Wireless Access Point on Ceiling" />
           <h1 class="article-title">
@@ -82,7 +82,7 @@
 		<p class="article-intro">I undertake Wi-Fi site surveys and plan wireless network deployments. This includes suggesting equipment and specifying optimum locations for wireless access points. I configure wireless network controllers and managed switches to run customer Wi-Fi and secure network applications simultaneously on separated VLAN networks. For clients wanting more than basic subnet routers I also deploy local customer Wi-Fi gateways and hosted captive portal systems too.</p>	
         </a></article>
         
-        <article class="subject">
+        <article class="card-subject">
         <a href="#">
           <img class="article-img" src="img/schematic.png" alt="Cabling Schematic Diagram " />
           <h1 class="article-title">
@@ -91,7 +91,7 @@
 		<p class="article-intro">Following cabinet preparation and network setup, I ensure that all my customers have cabling diagrams, patching schematics and full network documentation. This ensures that all IT vendors are aware of how their systems fit within the full network infrastructure. These documents help to avoid problems caused by configuration conflicts and assist with site troubleshooting when IT related issues arise.</p>	
         </a></article>
         
-        <article class="subject">
+        <article class="card-subject">
         <a href="#">
           <img class="article-img" src="img/troubleshoot.jpg" alt="Wirelss Spectrum Scanner" />
           <h1 class="article-title">
@@ -103,9 +103,9 @@
         
       </section>
     </main>
-  <footer>  
-    <div class="footer-info">
-    		<section class="ft-col">
+  <footer class="page-footer">
+    	<div class="footer-info">
+    		<section class="footer-info-secton">
             	<h1>CONTACT</h1>
     		<ul>
                 <li>07973 501684</li>
@@ -113,7 +113,7 @@
 				<li>MWDC London, UK</li>
             </ul>    
     		</section>
-            <section class="ft-col">
+            <section class="footer-info-secton">
             	<h1>GENERAL</h1>
               <ul>  
                 <li><a href="#">Projects</a></li>
@@ -122,26 +122,27 @@
                 <li><a href="#">Privacy Policy</a></li>
               </ul>  
     		</section>
-            <section class="ft-col">
+            <section class="footer-info-secton">
             	<h1>IT</h1>
               <ul>  
     			<li><a href="it.html">IT Consultancy</a></li>
-				<li><a href="cabling.html">Cabling</a></li>  
+				<li><a href="cabling.html">Cabling</a></li> 
+                <li><a href="cabinet-preparation.html">Cabinet Preparation</a></li>   
               </ul>  
     		</section>
-            <section class="ft-col">
+            <section class="footer-info-secton">
             	<h1>DESIGN</h1>
               <ul>  
-    			<li><a href="../design-consultancy/design.html">Design Consultancy</a></li>
+    			<li><a href="design-consultancy/design.html">Design Consultancy</a></li>
               </ul>  
     		</section>
-		    <section class="ft-col">
+			<section class="footer-info-secton">
             	<h1>PROJECTS</h1>
               <ul>  
     			<li><a href="#">Project 1</a></li>
               </ul>  
     		</section>
-			<section class="ft-col">
+			<section class="footer-info-secton">
             	<h1>ARTICLES</h1>
               <ul>  
     			<li><a href="#">Support Article</a></li>
@@ -150,21 +151,24 @@
     </div>
     
     <div class="footer-social">
-    
+	
         <ul class="social-media-icons">
             <li><a class="facebook" href="http://facebook.com/mwdclondon" target="_blank"></a></li>
             <li><a class="instagram" href="http://instagram.com/markwhipp_london" target="_blank"></a></li>
             <li><a class="twitter" href="http://twitter.com/markwhipp" target="_blank"></a></li>
             <li><a class="linkedin" href="http://www.linkedin.com/in/mwdclondon" target="_blank"></a></li>
             <li><a class="googleplus" href="https://plus.google.com/107511667135849845075" target="_blank"></a></li>
-            <li><a class="mailmw" href="mailto:info@markwhipp.com"></a></li>   
+            <li><a class="mailmw" href="mailto:info@markwhipp.com"></a></li>
+            
         </ul>
     </div>
     
-    <div class="footer-disclaimer">
+    
+       
+        <div class="footer-disclaimer">
     	<small><p>Site Designed and Coded by MWDC.</p>
 		<p>All images copyright &copy <author>Mark Whipp.</author></p>
-		<p>Copyright &copy <author>Mark Whipp</author> <time>2018</time>. All Rights Reserved.</p></small>
+		<p>Copyright &copy <author>Mark Whipp</author> <time>2019</time>. All Rights Reserved.</p></small>
     </div>
     
     <div class="footer-img">

@@ -1,50 +1,250 @@
+/* BASE STYLES Defaults-----------------------------*/
+
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto","Helvetica Neue","Helvetica",Sans-Serif;
+  font-family: "Roboto","Helvetica Neue","Helvetica",Sans-Serif;     
 }
 
-.wrapper {
+h1, h2, h3, h4 {
+  font-family: "Crete Round","Helvetica Neue","Helvetica",Sans-Serif;
+}
+
+body, main, header {
+   background-color: white;
+   color: black;
+}
+
+a {
+  text-decoration: underline;
+  color: black;    
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;   
+}
+
+
+
+
+/* END BASE STYES -----------------------------*/
+
+
+/* LAYOUT STYLES -------------------------------*/
+
+.l-full-wrapper {
 margin: 0 auto;  
 }
 
-.constrain{
-max-width: 1180px;
-margin: 0 auto; 
-}
-
-.constrain-sm{
-max-width: 800px;
-margin: 0 auto; 
-}
-
-header {
+.page-header {
   display: flex;
   align-items: center;
   padding: 10px;
-  font-size: 2em;
-  color: black;
   border-bottom: 2px solid #e05d19;
-  background-color: white;
+  background-color: white;    
+  color: black;
+  font-size: 2em;
+ 
 }
 
-article header{
-  display:block;
-  font-size: 1em;
-  border-bottom: none; 
-    
-}
-
-.logo {
+.l-logo {
   height: 50px;
   margin-right: 20px;
 }
-.heading{
-	letter-spacing: -0.05em;
+
+main{
+	
+	/*border-bottom: 2px solid #e05d19; */
 }
+
+/* Footer ----------------------------------------------*/
+
+.page-footer{
+    color: white;
+	background-color: gray;
+    font-size: 0.8em;
+	line-height: 1.5em;
+}
+
+/* Footer Information / Site Map Section */
+
+/* Fallback for browsers that do not have grid support*/
+.footer-info{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px;    
+}
+
+.footer-info-section{
+  flex: 1 1 150px;	
+} 
+
+
+.footer-info{
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 15px;
+    
+}
+
+.footer-info-section{
+	margin: 20px;	
+}
+
+.footer-info h1{
+	padding-bottom: 10px;	
+}
+
+.footer-info ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-info ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer Social Media Bar */
+
+.footer-social {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+}
+
+
+.social-media-icons {
+    margin 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-media-icons li {
+	display: inline-block;
+}
+
+.social-media-icons a {
+    display: block;
+    width: 32px;
+	height: 32px;
+    background-image: url('../img/social-sprite-6.png'); 
+    background-repeat: no-repeat;
+}
+
+/* sprite-settings */
+
+
+.facebook {
+    background-position: 0 0;
+}
+.social-media-icons a.facebook:hover {
+    background-position: 0 -32px; 
+   filter: alpha(opacity=80); /* Fallback for older versions of IE */
+    opacity: 0.8;
+}
+
+.instagram {
+    background-position: -32px 0;
+}
+.social-media-icons a.instagram:hover {
+    background-position: -32px -32px; 
+   filter: alpha(opacity=80); /* Fallback for older versions of IE */
+    opacity: 0.8;
+}
+
+.twitter {
+    background-position: -64px 0;
+}
+.social-media-icons a.twitter:hover {
+    background-position: -64px -32px; 
+   filter: alpha(opacity=80); /* Fallback for older versions of IE */
+    opacity: 0.8;
+}
+
+
+.linkedin {
+    background-position: -96px 0;
+}
+.social-media-icons a.linkedin:hover {
+    background-position: -96px -32px; 
+   filter: alpha(opacity=80); /* Fallback for older versions of IE */
+    opacity: 0.8;
+}
+
+.googleplus {
+    background-position: -128px 0;
+}
+.social-media-icons a.googleplus:hover {
+    background-position: -128px -32px; 
+   filter: alpha(opacity=80); /* Fallback for older versions of IE */
+    opacity: 0.8;
+}
+
+
+.mailmw {
+    background-position: -160px 0;
+}
+.social-media-icons a.mailmw:hover {
+    background-position: -160px -32px; 
+   filter: alpha(opacity=80); /* Fallback for older versions of IE */
+    opacity: 0.8;
+}
+
+/* end of sprite-settings */
+
+
+.footer-social a {
+	margin-right: 15px;
+}
+
+
+
+/* Footer Disclaimer Bar */
+
+.footer-disclaimer{
+	padding-top: 20px;	
+	padding-bottom: 20px;
+    background-color: #1f2227;
+}
+
+.footer-disclaimer p{
+	text-align: center;
+}
+
+.footer-disclaimer p a{
+	color: white;
+	text-decoration: none;
+}
+
+.footer-disclaimer p a:hover{
+	text-decoration: underline;
+}
+
+/* Footer Image Decoration Bar */
+
+.footer-img {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+}
+
+/* End Footer -----------------------------------------*/
+
+/* END LAYOUT STYLES -----------------------------*/
+
 
 /* Navigation styles -----------------------------*/
 
@@ -144,7 +344,7 @@ nav ul li a:hover {
     display: block;
     width: 20px;
     height: 2px;
-    background: #1f2227;
+    background: #E05d19;
     border-radius: 2px;
     margin-left: 14px;
   }
@@ -189,37 +389,158 @@ nav ul li a:hover {
 
 /* End Navigation styles -----------------------------*/
 
+/* RE-USABLE MODULE STYLES ---------------------------*/
 
-
-/* Main Section styles -------------------------------*/
-
-/* text styles -------------------------------------------------*/
-
-main{
-	
-	/*border-bottom: 2px solid #e05d19; */
+.constrain{
+max-width: 1180px;
+margin: 0 auto; 
 }
 
+.constrain-sm{
+max-width: 800px;
+margin: 0 auto; 
+}
+
+
+.heading{
+	letter-spacing: -0.05em;
+}
+
+
+/* Re-usable Responsive Items-----*/
+
+.lg-flex-row {
+	display: -webkit-flex;	
+    display: -ms-flexbox;	
+	display: flex;
+	
+    -webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+		
+	-webkit-justify-content: center;
+	-ms-flex-pack:center;
+	justify-content: center;
+	
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+
+.lg-flex-item {
+	-webkit-flex: 1 1 400px;
+    -ms-flex: 1 1 400px; 
+	flex: 1 1 400px;
+}
+
+
+.sm-flex-row{
+    display: -webkit-flex;	
+    display: -ms-flexbox;	
+	display: flex;
+	
+    -webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+		
+	-webkit-justify-content: center;
+	-ms-flex-pack:center;
+	justify-content: center;
+	
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+    padding-top: 20px;
+    
+}
+
+.sm-flex-item{
+    -webkit-flex: 1 0 100px;
+    -ms-flex: 1 0 100px;
+    flex: 1 0 100px;
+}
+
+
+/* Fallback for IE 10 it works but only if grid option switched off */
+.cards{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card-subject{
+  flex: 1 1 320px;	
+} 
+
+/* Grid Option -------------------------------------------------*/
+ .cards {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  max-width: 1180px;
+  margin: 0 auto 30px;
+} 
+
+/* Re-usable Responsive Image Items-----*/
+
+.article-img {
+  height: 375px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-img2 {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.article-img-flex {
+  height: auto;
+  width: 100%;
+}
+
+.article-img-sm {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/*
+.image-grid-100px {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+	padding-bottom: 1.2em;
+}
+*/
+
+/* Re-usable Text Styles-----*/
+
 .leading-bigtext {
-  font-size: 1.6em;
-  font-family: "Crete Round","Helvetica Neue","Helvetica",Sans-Serif;
   padding-top: 20px;
   padding-left: 20px;
-  padding-right: 3em;	
+  padding-right: 3em;
+  font-size: 1.6em;
 } 
 
 .leading-text {
   max-width: 1180px;
-  font-family: "Roboto","Helvetica Neue","Helvetica",Sans-Serif;
-  line-height: 1.4em;
   padding-top: 3px;
   padding-left: 20px;
   padding-right: 3em;
   padding-bottom: 2em;
+  line-height: 1.4em;
 }
 
 .leading-text a{
-	color: black;
+   color: black;
    text-decoration: underline;
 }
 
@@ -231,57 +552,161 @@ main{
    font-size: 0.9em;
 }
 
-
-article {
-  font-family: "Roboto","Helvetica Neue","Helvetica",Sans-Serif;
-  position: relative;	
-}
-
-article p{
-  line-height: 1.4em;
-  /* padding-top: 3px; */
-  padding-left: 20px;
-  padding-right: 1.5em;
-  margin-bottom: 2em;
-}
-
-article footer{
+.float-item-left{
+    float: left;
     background-color: yellow;
 }
 
-article footer p{
-    padding-top:1em;
+
+/* Re-usable Article Styles-----*/
+
+
+.full-article {
+  position: relative;	
 }
 
-article h1{
-	font-family: "Crete Round","Helvetica Neue","Helvetica",Sans-Serif;
-	font-size: 1.6em;
+.full-article-header{
+  display:block;
+  font-size: 1em;
+  border:none;
+}
+
+.pub-details{
+   color: grey; 
+   font-size: 0.8em;
+}
+
+.pub-details address{
+   color: grey;  
+}
+
+.pub-details address a{
+   color: grey;  
+}
+
+time {
+    display: inline;
+}
+
+.full-article-text{
+    max-width: 75ch;
+    margin: 20px 20px 0px 20px;
+}
+
+.full-article-text p:first-child{
+    padding-top:0px;
+}
+
+.side-item{
+    background-color: yellow;
+    width: 350px;
+    margin: 0 auto;
+    
+}
+
+
+
+@media screen and (min-width: 950px){
+
+    .full-article-text{
+    margin: 20px 8em 0px 12em;
+}
+.side-item{
+    float:right
+        
+}    
+ 
+}
+
+
+
+.f-article-pullquote:after {
+	
+
+	/*  !Content  */
+	content: attr(data-pullquote); 
+    
+    display:block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+	color: #e05d19;
+    
+    /*  !Typography  */
+	font-size: 22px;
+    text-shadow: none;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+.full-article p{
+  padding-top: 1.5em;
+  line-height: 1.4em;
+}
+
+.full-article h1{
 	padding-left: 20px;
   	padding-right: 3em;
 	padding-bottom: 0em;
+    font-size: 1.6em;
 }
 
 
-article h2{
-	font-family: "Crete Round","Helvetica Neue","Helvetica",Sans-Serif;
-	font-size: 1.4em;
+.full-article h2{
 	padding-left: 20px;
   	padding-right: 3em;
 	padding-bottom: 0em;
+    font-size: 1.4em;
 }
 
-article a{
+.full-article a{
    color: black;
    text-decoration: underline;
 }
 
-article a:hover{
+.full-article a:hover{
    text-decoration: none;
 }
 
 
+
+.full-article-footer{
+  margin-top: 0px;
+  padding: 20px;
+  color: #1f2227;
+  background-color: lightgray;
+}
+
+.full-article-footer p{
+    padding-top:1em;
+    font-style: italic;
+}
+
+
+/* End Module styles -------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .article-title {
-  font-family: "Crete Round","Helvetica Neue","Helvetica",Sans-Serif;
   font-size: 1.3em;
   bottom: 0;
   width: 100%;
@@ -301,18 +726,8 @@ article a:hover{
 }
 
 
-section article a {
-  text-decoration: none;	
-}
 
-section article a:hover {
-  opacity: 0.9;
-}
 
-.lg-article a {
-	color: black;
-	text-decoration: none;	
-}
 
 .article-list{
   padding-left: 50px;
@@ -331,73 +746,16 @@ section article a:hover {
 
 
 
-.pub-details{
-   color: grey; 
-   font-size: 0.8em;
-}
 
-.pub-details a{
-   color: grey;  
-}
-
-time {
-    display: inline;
-}
 
 
 /* image styles -------------------------------------------------*/
 
-.article-img {
-  height: 375px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.article-img2 {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-}
 
 
-.article-img-flex {
-  height: auto;
-  width: 100%;
-}
-/*
-.image-grid-100px {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-auto-rows: 100px;
-    grid-auto-flow: dense;
-	padding-bottom: 1.2em;
-}
-*/
 
-.article-image-footer{
-    display: -webkit-flex;	
-    display: -ms-flexbox;	
-	display: flex;
-	
-    -webkit-flex-flow: row wrap;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
-		
-	-webkit-justify-content: center;
-	-ms-flex-pack:center;
-	justify-content: center;
-	
-	-webkit-align-items: flex-start;
-	-ms-flex-align: start;
-	align-items: flex-start;
-    
-    padding-bottom: 2em;
-}
 
-.article-image-footer > div{
-    flex: 1 1 100px;
-}
+
 
 .article-image-footer > div > img {
     width: 100%;
@@ -408,29 +766,7 @@ time {
 
 /* Flex styles -------------------------------------------------*/
 
-.lg-row {
-	display: -webkit-flex;	
-    display: -ms-flexbox;	
-	display: flex;
-	
-    -webkit-flex-flow: row wrap;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
-		
-	-webkit-justify-content: center;
-	-ms-flex-pack:center;
-	justify-content: center;
-	
-	-webkit-align-items: flex-start;
-	-ms-flex-align: start;
-	align-items: flex-start;
-}
 
-.lg-article {
-	-webkit-flex: 1 1 400px;
-    -ms-flex: 1 1 400px; 
-	flex: 1 1 400px;
-}
 
 
 
@@ -440,44 +776,16 @@ time {
 /* No Grid Fallback -------------------------------*/
 
 
-/* Fallback for IE 10 it works but only if grid option switched off */
-.cards{
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.subject{
-  flex: 1 1 320px;	
-} 
-
- .cards {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  max-width: 1180px;
-  margin: 0 auto 30px;
-} 
 
 
 
-.cards2 {
-  display: -ms-grid;	
-  display: grid;
-  grid-gap: 5px;
-  -ms-grid-colums: 	
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  margin: 0 auto 30px;	
-}
 
+/*
 .article-text-area{
     display: grid;
 	grid-template-columns: 1fr 1fr 1fr minmax(40ch, 65ch) 1fr;
 	grid-template-rows: min-content min-content min-content auto min-content;
     font-size: 1em;
-  /*padding-left: 20px; */
-  /*padding-right: 2em; */
    padding-top: 2em;
     padding-bottom: 3em; 
   max-width: 100%;	
@@ -488,17 +796,7 @@ time {
     grid-column: 3/5;
 }
 
-
-/* Footer ----------------------------------------------*/
-
-footer{
-	/*height: 300px;*/
-	font-size: 0.8em;
-	line-height: 1.5em;
-	color: white;
-	margin-top: 4em;
-	background-color: gray;
-}
+*/
 
 article footer{
     font-size: 1em;
@@ -507,175 +805,35 @@ article footer{
 	background-color: white;
 }
 
-.footer-info{
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: center;
+
+
+
+
+
+
+
+
+
+
+/*	STATE STYLES */
+
+
+
+.lg-flex-item a {
+    text-decoration: none;
 }
 
-.ft-col{
-  flex: 1 1 150px;	
-} 
-
-
-.footer-info{
-	display: grid;
-	grid-gap: 5px;
-	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+.card-subject a {
+    text-decoration: none;
 }
 
-.footer-info section{
-	margin: 20px;	
+.lg-flex-item a:hover {
+    opacity: 0.9;
 }
 
-.footer-info h1{
-	margin-bottom: 10px;	
+.card-subject a:hover {
+    opacity: 0.9;
 }
-
-.footer-info ul li a {
-  outline: none;
-  text-decoration: none;
-  color: white;
-}
-.footer-info ul li a:hover {
-  text-decoration: underline;
-}
-
-.footer-img {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: center;
-	background-color: white;
-}
-.footer-social {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
-	height: 50px;
-}
-
-
-.social-media-icons {
-	list-style: none;
-    margin 0;
-    padding: 0;
-}
-.social-media-icons li {
-	display: inline-block;
-}
-
-.social-media-icons a {
-	background-image: url('../img/social-sprite-6.png'); 
-    background-repeat: no-repeat;
-    display: block;
-    width: 32px;
-	height: 32px;
-}
-
-
-
-/* sprite-settings */
-
-
-.facebook {
-    background-position: 0 0;
-}
-.social-media-icons a.facebook:hover {
-    background-position: 0 -32px; 
-   filter: alpha(opacity=80); /* Fallback for older versions of IE */
-    opacity: 0.8;
-}
-
-
-.instagram {
-    background-position: -32px 0;
-}
-.social-media-icons a.instagram:hover {
-    background-position: -32px -32px; 
-   filter: alpha(opacity=80); /* Fallback for older versions of IE */
-    opacity: 0.8;
-}
-
-.twitter {
-    background-position: -64px 0;
-}
-.social-media-icons a.twitter:hover {
-    background-position: -64px -32px; 
-   filter: alpha(opacity=80); /* Fallback for older versions of IE */
-    opacity: 0.8;
-}
-
-
-.linkedin {
-    background-position: -96px 0;
-}
-.social-media-icons a.linkedin:hover {
-    background-position: -96px -32px; 
-   filter: alpha(opacity=80); /* Fallback for older versions of IE */
-    opacity: 0.8;
-}
-
-.googleplus {
-    background-position: -128px 0;
-}
-.social-media-icons a.googleplus:hover {
-    background-position: -128px -32px; 
-   filter: alpha(opacity=80); /* Fallback for older versions of IE */
-    opacity: 0.8;
-}
-
-
-.mailmw {
-    background-position: -160px 0;
-}
-.social-media-icons a.mailmw:hover {
-    background-position: -160px -32px; 
-   filter: alpha(opacity=80); /* Fallback for older versions of IE */
-    opacity: 0.8;
-}
-
-/* end of sprite-settings */
-
-
-
-.footer-social a {
-	margin-right: 15px;
-}
-/*.footer-social img {
-	height: 25px;
-	width: 25px;
-} */
-
-
-.footer-disclaimer{
-	background-color: #1f2227;
-/*	height: 120px; */
-	color: white;
-	padding-top: 20px;	
-	padding-bottom: 20px;
-}
-
-.footer-disclaimer p{
-	text-align: center;
-}
-
-.footer-disclaimer p a{
-	color: white;
-	text-decoration: none;
-}
-
-.footer-disclaimer p a:hover{
-	text-decoration: underline;
-}
-
-
-
-
-
-
 
 
 
@@ -699,5 +857,5 @@ display: none;
 	}
 }
 
-
+/*	END STATE STYLES */
 
