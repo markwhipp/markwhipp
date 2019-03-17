@@ -860,6 +860,27 @@ display: none;
 .article-full > h1{
 		margin-top: 2em	
 	}
+    
+.full-article-text{
+    margin: 20px 2em 0px 12em;
+    font-size: 10pt;
+}
+    
+    .full-article-footer p{
+      font-size: 10pt;  
+    } 
+    
+    
+    .f-article-pullquote:after{
+        font-size: 14pt;
+        line-height: 1.4;
+    }
+    
+    .footer-disclaimer small{
+        font-size: 8pt;
+        line-height: 1;
+    }
+    
 }
 
 /*	END STATE STYLES */
