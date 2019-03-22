@@ -43,8 +43,14 @@ a:hover {
 /* LAYOUT STYLES -------------------------------*/
 
 .l-full-wrapper {
-margin: 0 auto;  
+   margin: 0 auto;  
 }
+
+.l-main-wrapper {
+   max-width: 1400px;
+   margin: 0 auto;  
+}
+
 
 .page-header {
   display: flex;
@@ -87,6 +93,10 @@ main{
   padding: 15px;    
 }
 
+.footer-info-wrapper{
+    margin: 0 auto; 
+}
+
 .footer-info-section{
   flex: 1 1 150px;	
 } 
@@ -95,9 +105,8 @@ main{
 .footer-info{
 	display: grid;
 	grid-gap: 5px;
-	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    padding: 15px;
-    
+	grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    padding: 12px;
 }
 
 .footer-info-section{
@@ -484,7 +493,6 @@ margin: 0 auto;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  max-width: 1180px;
   margin: 0 auto 30px;
 } 
 
@@ -616,6 +624,8 @@ time {
     .full-article-text{
     margin: 20px 8em 0px 12em;
 }
+    
+    
 .side-item{
     float:right
         
@@ -686,7 +696,7 @@ time {
   margin-top: 0px;
   padding: 20px;
   color: #1f2227;
-  background-color: lightgray;
+  background-color: #fff;
 }
 
 .full-article-footer p{
