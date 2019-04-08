@@ -499,27 +499,27 @@ margin: 0 auto;
 /* Re-usable Responsive Image Items-----*/
 
 .article-img {
-  height: 375px;
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
 }
 
 .article-img2 {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 
 .article-img-flex {
-  height: auto;
-  width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .article-img-sm {
-  height: 100px;
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
 }
 
 
