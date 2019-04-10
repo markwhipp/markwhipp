@@ -441,6 +441,24 @@ margin: 0 auto;
 	align-items: flex-start;
 }
 
+.flex-row-wrap {
+	display: -webkit-flex;	
+    display: -ms-flexbox;	
+	display: flex;
+	
+    -webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+		
+	-webkit-justify-content: center;
+	-ms-flex-pack:center;
+	justify-content: center;
+	
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
 
 .lg-flex-item {
 	-webkit-flex: 1 1 400px;
