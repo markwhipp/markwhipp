@@ -423,23 +423,7 @@ margin: 0 auto;
 
 /* Re-usable Responsive Items-----*/
 
-.lg-flex-row {
-	display: -webkit-flex;	
-    display: -ms-flexbox;	
-	display: flex;
-	
-    -webkit-flex-flow: row wrap;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
-		
-	-webkit-justify-content: center;
-	-ms-flex-pack:center;
-	justify-content: center;
-	
-	-webkit-align-items: flex-start;
-	-ms-flex-align: start;
-	align-items: flex-start;
-}
+
 
 .flex-row-wrap {
 	display: -webkit-flex;	
@@ -468,26 +452,12 @@ margin: 0 auto;
 	flex: 1 1 400px;
 }
 
-
-.sm-flex-row{
-    display: -webkit-flex;	
-    display: -ms-flexbox;	
-	display: flex;
-	
-    -webkit-flex-flow: row wrap;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
-		
-	-webkit-justify-content: center;
-	-ms-flex-pack:center;
-	justify-content: center;
-	
-	-webkit-align-items: flex-start;
-	-ms-flex-align: start;
-	align-items: flex-start;
-    padding-top: 20px;
-    
+.flex-item-img-lg {
+	-webkit-flex: 2 1 400px;
+    -ms-flex: 2 1 400px; 
+	flex: 2 1 400px;
 }
+
 
 .sm-flex-item{
     -webkit-flex: 1 0 100px;
@@ -508,13 +478,88 @@ margin: 0 auto;
   flex: 1 1 320px;	
 } 
 
-/* Grid Option -------------------------------------------------*/
+/* Re-usable Grid Option -------------------------------------------------*/
  .cards {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   margin: 0 auto 30px;
 } 
+
+
+
+
+
+/* Grid Trio Image Module right ----*/
+
+.grid-image-trio-right {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+	padding-bottom: 1.2em;
+}
+
+.grid-image-trio-lg-item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;    
+}
+
+.grid-image-trio-sm-item2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;    
+}
+
+.grid-image-trio-sm-item3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;   
+}
+
+
+@media (min-width: 700px) {
+  
+    .grid-image-trio-right {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;    
+	padding-bottom: 1.2em;
+}
+
+.grid-image-trio-lg-item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;    
+}
+
+.grid-image-trio-sm-item2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;    
+}
+
+.grid-image-trio-sm-item3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;   
+}
+   
+}
+
+/* ---------------------------*/
+
+
 
 /* Re-usable Responsive Image Items-----*/
 
@@ -543,16 +588,7 @@ margin: 0 auto;
 }
 
 
-/*
-.image-grid-100px {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-auto-rows: 100px;
-    grid-auto-flow: dense;
-	padding-bottom: 1.2em;
-}
-*/
+
 
 /* Re-usable Text Styles-----*/
 
