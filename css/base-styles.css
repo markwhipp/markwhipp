@@ -479,13 +479,15 @@ margin: 0 auto;
 } 
 
 /* Re-usable Grid Option -------------------------------------------------*/
- .cards {
+ 
+@supports (display:grid){
+.cards {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   margin: 0 auto 30px;
 } 
-
+}
 
 
 
