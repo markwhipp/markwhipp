@@ -465,8 +465,12 @@ margin: 0 auto;
     flex: 1 0 100px;
 }
 
+/* Re-usable Grid Option -------------------------------------------------*/
 
-/* Fallback for IE 10 it works but only if grid option switched off */
+
+/* Cards 320px -----------*/
+
+/* Flexbox Fallback for IE 10 it works but only if grid option switched off */
 .cards{
   display: flex;
   flex-flow: row wrap;
@@ -478,7 +482,7 @@ margin: 0 auto;
   flex: 1 1 320px;	
 } 
 
-/* Re-usable Grid Option -------------------------------------------------*/
+/* feature query for grid*/
  
 @supports (display:grid){
 .cards {
@@ -489,6 +493,7 @@ margin: 0 auto;
 } 
 }
 
+/* end_Cards 320px ----------*/
 
 
 
