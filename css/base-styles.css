@@ -29,7 +29,7 @@ a {
   color: black;    
 }
 
-a:hover {
+a:hover, a:focus{
   text-decoration: none;
   color: black;   
 }
@@ -445,6 +445,26 @@ margin: 0 auto;
     padding-top: 2em;
 }
 
+.polaroid-flex-row-wrap {
+	display: -webkit-flex;	
+    display: -ms-flexbox;	
+	display: flex;
+	
+    -webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+		
+	-webkit-justify-content: space-evenly;
+	-ms-flex-pack:space-evenly;
+	justify-content: space-evenly;
+	
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+    
+    padding-top: 2em;
+}
+
 
 .lg-flex-item {
 	-webkit-flex: 1 1 400px;
@@ -464,6 +484,9 @@ margin: 0 auto;
     -ms-flex: 1 0 100px;
     flex: 1 0 100px;
 }
+
+
+
 
 /* Re-usable Grid Option -------------------------------------------------*/
 
@@ -766,6 +789,42 @@ time {
     padding-top:1em;
     font-style: italic;
 }
+
+
+
+
+.polaroid-image
+{
+    /*  Flex item child inside a Flexbox container but the flex item does not grow or shrink   */
+    -webkit-flex: 0 0 250px;
+    -ms-flex: 0 0 250px;
+    flex: 0 0 250px;
+    
+    /*  Makes this element the containing block/ positioning context for use by the absolute positioning values of the attribute polaroid-caption   */
+    position:relative;
+    
+
+    border: 1px solid darkgrey;
+    background-color: white;
+    padding: 15px 15px 60px 15px;
+    box-shadow: 5px 10px 10px darkgrey;
+    margin-bottom: 20px;
+}
+
+.polaroid-image:after
+{
+    content: attr(polaroid-caption);
+    position: absolute;
+    top: 255px;
+    left: 15px;
+    padding: 10px;
+    color: grey;
+    font-size: 0.8rem;
+    text-align: left;
+    font-family: "Crete Round","Helvetica Neue","Helvetica",Sans-Serif;
+    font-style: italic;
+}
+
 
 
 /* End Module styles -------------------------------------*/
