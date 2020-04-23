@@ -54,17 +54,22 @@ a:hover, a:focus{
 
 .page-header {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
   align-items: center;
   padding: 10px;
   border-bottom: 2px solid #e05d19;
-  background-color: white;    
-  color: black;
   font-size: 2em;
  
 }
 
 .l-logo {
-  height: 70px;
+  height: 48px;
+  margin-right: 20px;
+}
+
+.reg-mark {
+  height: 75px;
   margin-right: 20px;
 }
 
@@ -251,8 +256,10 @@ main{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: top;
 	background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* End Footer -----------------------------------------*/
