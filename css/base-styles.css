@@ -67,13 +67,18 @@ a:hover, a:focus{
 }
 
 .l-logo {
-  height: 25px;
-  margin: 0px 8px 0px;
+  height: 35px;
+    box-sizing: content-box;
+}
+
+.l-logo:hover{
+   border-top: 2px solid cyan; 
 }
 
 .reg-mark {
   height: 45px;
 }
+
 
 .reg-mark #reg-magenta{
     transition-duration: 0.10s;
