@@ -60,7 +60,10 @@ a:hover, a:focus{
   padding: 10px;
   /* border-bottom: 2px solid #e05d19; */
   font-size: 2em;
- 
+}
+
+.page-header a{
+    text-decoration: none;
 }
 
 .l-logo {
@@ -69,11 +72,32 @@ a:hover, a:focus{
 }
 
 .reg-mark {
-  height: 35px;
+  height: 45px;
 }
+
+.reg-mark #reg-magenta{
+    transition-duration: 0.10s;
+    transition-property: transform;
+    transform-origin: center center; 
+    
+}
+
+.reg-mark:hover #reg-magenta{
+    transform: rotate(10deg);
+}
+
+/*
+.reg-mark:hover {
+   transform: rotate(10deg); 
+}
+ */
 
 .crop-mark{
     height: 45px;
+}
+
+.header-graphic a{
+   text-decoration: none; 
 }
 
 main{
