@@ -12,15 +12,16 @@ html {
 }
 
 body {
-  font-family: "Roboto","Helvetica Neue","Helvetica",Sans-Serif;     
+  font-family: "Roboto","Helvetica Neue","Helvetica",Sans-Serif;
+    background-color: lightgray;
 }
 
 h1, h2, h3, h4 {
   font-family: "Crete Round","Helvetica Neue","Helvetica",Sans-Serif;
 }
 
-body, main, header {
-   background-color: white;
+header, nav, main, footer {
+   background-color: #fcfcfc;
    color: black;
 }
 
@@ -43,7 +44,8 @@ a:hover, a:focus{
 /* LAYOUT STYLES -------------------------------*/
 
 .l-full-wrapper {
-   margin: 0 auto;  
+max-width: 1366px;    
+   margin: 0 auto;
 }
 
 .l-main-wrapper {
@@ -114,7 +116,6 @@ main{
 
 .page-footer{
     color: white;
-	background-color: gray;
     font-size: 0.8em;
 	line-height: 1.5em;
 }
@@ -133,6 +134,7 @@ main{
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: center;
+  background-color: grey;
   padding: 15px;
   
 }
@@ -186,6 +188,7 @@ main{
 	justify-content: center;
 	align-items: center;
 	height: 50px;
+    background-color: grey;
 }
 
 
@@ -303,9 +306,8 @@ main{
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: top;
-	background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+	margin-top: 10px;
+    padding: 10px;
 }
 
 /* End Footer -----------------------------------------*/
@@ -565,7 +567,7 @@ margin: 0 auto;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  margin: 0 auto 30px;
+  margin: 0 auto;
 } 
 }
 
