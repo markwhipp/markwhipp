@@ -941,7 +941,9 @@ time {
 }
 
 
-
+.no-anchor-decoration a{
+    text-decoration: none;
+}
 
 
 
