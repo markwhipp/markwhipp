@@ -500,6 +500,13 @@ margin: 0 auto;
     padding-top: 2em;
 }
 
+.flex-row-no-pad{
+  padding-top: 0;
+}
+
+.flex-row-pad-bottom{
+  padding-bottom: 2em;
+}
 
 .text-column-flex-row-wrap {
 	display: -webkit-flex;	
