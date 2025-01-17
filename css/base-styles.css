@@ -107,10 +107,6 @@ max-width: 1290px;
    text-decoration: none; 
 }
 
-main{
-	
-	/*border-bottom: 2px solid #e05d19; */
-}
 
 /* Footer ----------------------------------------------*/
 
@@ -193,7 +189,7 @@ main{
 
 
 .social-media-icons {
-    margin 0;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
